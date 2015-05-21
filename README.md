@@ -77,4 +77,6 @@ Simulate a separate command-line environment within the current process
 
 #### Returns:
 
-`function` Function that kills the simulated process (as if the user pressed `Ctrl+C`)
+`function` Function that kills the simulated process (as if the user pressed `Ctrl+C`).
+
+- This function returns a `results` object, as seen in `exitCallback` arguments.
