@@ -1,0 +1,44 @@
+{
+  "name": "mock-cli",
+  "version": "0.1.0",
+  "description": "CLI capture tool for testing command-line apps",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "scripts": {
+    "prepublish": "npm test",
+    "test": "eslint index.js lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timkendrick/capture-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "capture",
+    "mock",
+    "process",
+    "stdio",
+    "stdin",
+    "stdout",
+    "stderr"
+  ],
+  "author": "Tim Kendrick <timkendrick@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timkendrick/capture-cli/issues"
+  },
+  "homepage": "https://github.com/timkendrick/capture-cli#readme",
+  "dependencies": {
+    "chalk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@timkendrick/node-project": "^1.0.0",
+    "eslint": "^0.21.2"
+  }
+}
