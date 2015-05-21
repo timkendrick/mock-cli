@@ -4,7 +4,8 @@
   "description": "CLI capture tool for testing command-line apps",
   "main": "index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "test": "test"
   },
   "files": [
     "index.js",
