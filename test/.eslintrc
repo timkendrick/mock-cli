@@ -1,0 +1,9 @@
+{
+	"rules": {
+		"no-unused-expressions": false,
+		"no-process-exit": false
+	},
+	"env": {
+		"mocha": true
+	}
+}

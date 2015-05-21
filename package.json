@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "prepublish": "npm test",
-    "test": "eslint index.js lib"
+    "test": "eslint index.js lib test && mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,8 @@
   },
   "devDependencies": {
     "@timkendrick/node-project": "^1.0.0",
-    "eslint": "^0.21.2"
+    "chai": "^2.3.0",
+    "eslint": "^0.21.2",
+    "mocha": "^2.2.5"
   }
 }
