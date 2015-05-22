@@ -54,7 +54,7 @@ Simulate a separate command-line environment within the current process
 | Name | Type | Required | Default | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `argv` | `Array` | No | `process.argv` | Fake `argv` for the simulated process |
-| `stdio` | `Object` | No | N/A | Object containing streams that are used to fake stdio |
+| `stdio` | `object` | No | `null` | Object containing streams that are used to fake stdio |
 | `stdio.stdin` | `Stream` | No | `null` | Input stream that is piped into the simulated process as `process.stdin` |
 | `stdio.stdout` | `Stream` | No | `null` | Output stream that is connected to `process.stdout` of the simulated process |
 | `stdio.stderr` | `Stream` | No | `null` | Error stream that is connected to `process.stderr` of the simulated process |
@@ -64,11 +64,12 @@ Simulate a separate command-line environment within the current process
 
 	##### `function(error, result)`
 
-	##### Arguments:
+	###### Arguments:
+
 	| Name | Type | Description |
 	| ---- | ---- | ----------- |
 	| `error` | `Error` | Uncaught exception thrown by the simulated process |
-	| `result` | `Object` | Object containing information about the simulated process |
+	| `result` | `object` | Object containing information about the simulated process |
 	| `result.code` | `number` | Process exit code, or `1` on an uncaught exception |
 	| `result.stdin` | `string` | UTF-8 contents of `process.stdin`, captured during simulation |
 	| `result.stdout` | `string` | UTF-8 contents of `process.stdout`, captured during simulation |
